@@ -17,5 +17,6 @@
 //= require data.js
 //= require my_window.js
 //= require templates/show_question.js.coffee
+//= require templates/result.js.coffee
 //= require home.js.coffee
 //=

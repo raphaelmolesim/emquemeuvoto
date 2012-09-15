@@ -64,7 +64,7 @@ render_result = () ->
     if score > max_score
       leader = candidate
       max_score = score
-  alert(leader)
+  $("#content").html(Mustache.render(MyWindow().result_page, { candidate : leader}))
 
 render_view = (data) ->
   $( ".hero-unit" ).html(Mustache.render(MyWindow().show_question, data))
