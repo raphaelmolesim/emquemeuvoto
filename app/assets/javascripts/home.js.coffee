@@ -67,5 +67,5 @@ render_result = () ->
   alert(leader)
 
 render_view = (data) ->
-  $( ".hero-unit" ).html(MyWindow().Mustache.render(w.show_question, data))
+  $( ".hero-unit" ).html(Mustache.render(MyWindow().show_question, data))
   $( ".hero-unit" ).effect( "slide", {}, 1500 )
