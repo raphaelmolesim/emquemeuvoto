@@ -27,11 +27,12 @@ $ ->
 
 render_next = (result) ->
   questions[index].answer = result
-  calculate_scores(questions[index])
+  calculate_scores(questions[index], ->
   if (index < questions.length - 1)
     render_view(questions[++index])
   else
     render_result()
+  )
 
 candidate_class = (candidate) ->
   {
@@ -43,7 +44,7 @@ candidate_class = (candidate) ->
   }[candidate]
 
 
-calculate_scores = (question) ->
+calculate_scores = (question, callback) ->
   for candidate, score of result
     if question.answer and question.proposers.indexOf(candidate) != -1
       result[candidate] += 1
@@ -52,8 +53,9 @@ calculate_scores = (question) ->
     else
       result[candidate] -= 1
     id = candidate_class(candidate)
-    $("ul#candidates li##{id} label.score").effect( 'bounce', {}, 500 )
+    console.log("ul#candidates li##{id} label.score")
     $("ul#candidates li##{id} label.score").css( 'display', "block" )
+    $("ul#candidates li##{id} label.score").effect( 'bounce', {}, 500, callback )
     if result[candidate] <= 0
       $("ul#candidates li##{id} label.score").css( 'color', "red" )
     else
