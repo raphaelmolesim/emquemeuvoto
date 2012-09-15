@@ -1,17 +1,3 @@
-questions = [
-  {
-    title : "Pergunta 01",
-    subtitle : "Subtítulo 01",
-    description : "Descricao 01",
-    proposers : [ "Fernando Haddad", "José Serra" ]
-  },
-  {
-    title : "Pergunta 02",
-    subtitle : "Subtítulo 02",
-    description : "Descricao 02",
-    proposers : [ "Celso Russomano", "José Serra" ]
-  }
-]
 
 index = 0
 

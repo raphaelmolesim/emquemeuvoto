@@ -10,4 +10,4 @@ show_question = "
 	<a id=\"dont-know\" class=\"btn btn-primary btn-large\">Não tenho uma opnião formada</a>
 </p>
 "
-Window.show_question = show_question
+window.show_question = show_question
