@@ -12,4 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require jquery-ui-1.8.23.custom.min.js
+//= require mustache.js
+//= require data.js
+//= require my_window.js
+//= require templates/show_question.js.coffee
+//= require home.js.coffee
+//=
