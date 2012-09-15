@@ -5727,7 +5727,7 @@ a.badge:hover {
 
 .hero-unit {
   padding: 60px;
-  margin-bottom: 30px;
+  margin: 30px auto;
   background-color: #eeeeee;
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
