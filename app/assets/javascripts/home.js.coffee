@@ -33,6 +33,16 @@ render_next = (result) ->
   else
     render_result()
 
+candidate_class = (candidate) ->
+  {
+      'Fernando Haddad' : "haddad",
+      'José Serra' : "serra",
+      'Celso Russomano' : "russomano",
+      'Soninha Francine' : "soninha",
+      'Gabriel Chalita' : "chalita"
+  }[candidate]
+
+
 calculate_scores = (question) ->
   for candidate, score of result
     if question.answer and question.proposers.indexOf(candidate) != -1
@@ -41,13 +51,7 @@ calculate_scores = (question) ->
       result[candidate] += 1
     else
       result[candidate] -= 1
-    id = {
-      'Fernando Haddad' : "haddad",
-      'José Serra' : "serra",
-      'Celso Russomano' : "russomano",
-      'Soninha Francine' : "soninha",
-      'Gabriel Chalita' : "chalita"
-    }[candidate]
+    id = candidate_class(candidate)
     $("ul#candidates li##{id} label.score").effect( 'bounce', {}, 500 )
     $("ul#candidates li##{id} label.score").css( 'display', "block" )
     if result[candidate] <= 0
@@ -64,7 +68,10 @@ render_result = () ->
     if score > max_score
       leader = candidate
       max_score = score
-  $("#content").html(Mustache.render(MyWindow().result_page, { candidate : leader}))
+  $("#content").html(Mustache.render(MyWindow().result_page, 
+    candidate : leader 
+    candidate_class : candidate_class(leader)
+  ))
 
 render_view = (data) ->
   $( ".hero-unit" ).html(Mustache.render(MyWindow().show_question, data))
