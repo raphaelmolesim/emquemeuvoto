@@ -1,7 +1,7 @@
 var MyWindow = function() {
   try {
     return Window;
-  } catch (err)
+  } catch (err) {
     return window;
   }
 };
