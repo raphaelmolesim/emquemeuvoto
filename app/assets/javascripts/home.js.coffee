@@ -72,7 +72,8 @@ render_result = () ->
     candidate : leader 
     candidate_class : candidate_class(leader)
   ))
+  $("div#candidate").fadeIn(1500)
 
 render_view = (data) ->
-  $( ".hero-unit" ).html(Mustache.render(MyWindow().show_question, data))
-  $( ".hero-unit" ).effect( "slide", {}, 1500 )
+  $( "#content" ).html(Mustache.render(MyWindow().show_question, data))
+  $( "div.question" ).effect( "slide", {}, 1500 )

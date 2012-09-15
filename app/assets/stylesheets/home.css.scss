@@ -1,6 +1,11 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+div.question {
+  background-color: #EEEEEE;
+  border-radius: 6px 6px 6px 6px;
+  padding: 60px;
+  height: 300px;
+  p:nth-child(2) { margin: 10px 0px; }
+  p:nth-child(3) { font-size: 12px; }
+}
 
 ul#candidates {
   width: 900px;
@@ -16,7 +21,8 @@ ul#candidates {
     font-weight: bold;
     display:none;
   }
-  li { padding-top: 205px; width: 180px; height: 80px; float : left; }
+  li { padding-top: 205px; width: 160px; height: 80px; float : left; }
+  li + li { margin-left: 25px; }
   li#haddad { background: url(/assets/haddad.jpg) no-repeat;}
   li#serra { background: url(/assets/serra.jpg) no-repeat;}
   li#russomano { background: url(/assets/russomano.jpg)  no-repeat;}
@@ -24,3 +30,20 @@ ul#candidates {
   li#soninha { background: url(/assets/soninha.jpg) no-repeat; }
 }
 hr { clear:both; }
+
+div#candidate { 
+  display:none;
+  padding-top: 205px; 
+  width: 160px; 
+  height: 0px; 
+  margin: 20px auto; 
+  font-weight: bold; 
+  font-size: 18px;
+  text-align: center;
+}
+
+div.haddad { background: url(/assets/haddad.jpg) no-repeat;}
+div.serra { background: url(/assets/serra.jpg) no-repeat;}
+div.russomano { background: url(/assets/russomano.jpg)  no-repeat;}
+div.chalita { background: url(/assets/chalita.jpg) no-repeat; }
+div.soninha { background: url(/assets/soninha.jpg) no-repeat; }
