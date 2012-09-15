@@ -10,7 +10,7 @@ group :production do
 end
 
 group :development do 
-  gem 'sqlite'
+  gem 'sqlite3'
 end
 
 # Gems used only for assets and not required
