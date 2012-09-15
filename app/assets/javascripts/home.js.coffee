@@ -1,3 +1,14 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
+$ ->
+	$("#start-now").click (e) ->
+		e.preventDefault()
+		$( "#hero-unit" ).effect( "slice", {}, 1500, null );
+
+callback = ->
+	setTimeout ->
+		data =
+			title : "Pergunta 01"
+			subtitle : "Subtitle 01"
+			description : "Description 01"
+		$( "#hero-unit" ).html(Mustache.render(show_question, data))
+	, 1000
+
