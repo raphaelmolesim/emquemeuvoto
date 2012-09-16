@@ -8,7 +8,7 @@ div.question {
   p:nth-child(3) { font-size: 12px; }
 }
 
-ul#candidates {
+ul#candidates, ul#leaders {
   width: 900px;
   list-style: none;
   margin: 50px auto;
@@ -30,18 +30,30 @@ ul#candidates {
   li#chalita { background: url(/assets/chalita.jpg) no-repeat; }
   li#soninha { background: url(/assets/soninha.jpg) no-repeat; }
 }
+
 hr { clear:both; }
 
-div#candidate { 
-  display:none;
-  padding-top: 205px; 
-  width: 160px; 
-  height: 0px; 
-  margin: 20px auto; 
-  font-weight: bold; 
-  font-size: 18px;
-  text-align: center;
+div.hero-unit ul#leaders { 
+  display:none; 
+  height: 200px;
+  margin: 20px auto;
 }
+
+div#content div.hero-unit ul.size-1 { width: 180px; }
+div#content  div.hero-unit ul.size-2 { 
+    width: 500px; 
+    li + li { margin-left: 180px } 
+  }
+div#content div.hero-unit ul.size-3 { 
+    width: 725px; 
+    li + li { margin-left: 120px } 
+  }
+div#content div.hero-unit ul.size-4 { width: 725px; }
+div#content div.hero-unit ul.size-5 { 
+    width: 710px;
+    height: 480px
+    li + li { margin-left: 110px }
+  }
 
 div.haddad { background: url(/assets/haddad.jpg) no-repeat;}
 div.serra { background: url(/assets/serra.jpg) no-repeat;}

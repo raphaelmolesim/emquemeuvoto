@@ -4,61 +4,71 @@ var questions = [
 		title: 'Pedágio Urbano',
 		subtitle: 'Subtítulo a ser feito',
 		description: 'Descrição a ser feito',
-		proposers: [ 'Soninha Francine' ]
+		proposers: [ 'soninha' ],
+		opponents: [ 'serra', 'haddad', 'russomano' ]
 	},
 	{
 		title: 'Escola Período Integral',
 		subtitle: 'Subtítulo a ser feito',
 		description: 'Descrição a ser feito',
-		proposers: [ 'Fernando Haddad' ]
+		proposers: [ 'haddad' ],
+		opponents: [ ]
 	},
 	{
 		title: 'Tarifa Porpocional',
 		subtitle: 'Subtítulo a ser feito',
 		description: 'Descrição a ser feito',
-		proposers: [ 'Celso Russomano' ]
+		proposers: [ 'russomano' ],
+		opponents: [ ]
 	},
 	{
 		title: 'Extensão da Marginal até Guaianazes e da Radial Leste',
 		subtitle: 'Subtítulo a ser feito',
 		description: 'Descrição a ser feito',
-		proposers: [ 'José Serra' ]
+		proposers: [ 'serra' ],
+		opponents: [ ]
 	},
 	{
 		title: 'Repovoar o Centro',
 		subtitle: 'Subtítulo a ser feito',
 		description: 'Descrição a ser feito',
-		proposers: [ 'Soninha Francine', 'Fernando Haddad', 'Celso Russomano' ]
+		proposers: [ 'soninha', 'haddad', 'russomano' ],
+		opponents: [ ]
 	},
 	{
 		title: 'Inclusão Social de Travestis, Gay, Lésbicas e Bisexuais',
 		subtitle: 'Subtítulo a ser feito',
 		description: 'Descrição a ser feito',
-		proposers: [ 'Soninha Francine', 'Fernando Haddad' ]
+		proposers: [ 'soninha', 'haddad' ],
+		opponents: [ ]
 	},
 	{
 		title: 'Investimento da Prefeitura em Metrô, trens ou Monotrilho',
 		subtitle: 'Subtítulo a ser feito',
 		description: 'Descrição a ser feito',
-		proposers: [ 'José Serra', 'Celso Russomano' ]
+		proposers: [ 'serra', 'russomano' ],
+		opponents: [ 'soninha' ]
 	},
 	{
 		title: 'Urbanização de Favelas',
 		subtitle: 'Subtítulo a ser feito',
 		description: 'Descrição a ser feito',
-		proposers: [ 'José Serra', 'Celso Russomano', 'Fernando Haddad' ]
+		proposers: [ 'serra', 'russomano', 'haddad' ],
+		opponents: [ ]
 	},
 	{
 		title: 'Descentralização da Gestão Pública',
 		subtitle: 'Subtítulo a ser feito',
 		description: 'Descrição a ser feito',
-		proposers: [ 'Soninha Francine', 'Fernando Haddad' ]
+		proposers: [ 'soninha', 'haddad' ],
+		opponents: [ 'serra' ]
 	},
 	{
 		title: 'Aumentar o número de professores na sala de aula',
 		subtitle: 'Subtítulo a ser feito',
 		description: 'Descrição a ser feito',
-		proposers: [ 'Soninha Francine', 'José Serra' ]
+		proposers: [ 'soninha', 'serra' ],
+		opponents: [  ]
 	}
 
 ];

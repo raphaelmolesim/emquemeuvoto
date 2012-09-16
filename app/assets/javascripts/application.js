@@ -16,7 +16,8 @@
 //= require mustache.js
 //= require data.js
 //= require my_window.js
+//= require templates/candidates_list.js.coffee
 //= require templates/show_question.js.coffee
 //= require templates/result.js.coffee
+//= require ranking.js.coffee
 //= require home.js.coffee
-//=

@@ -1,81 +1,60 @@
-
 index = 0
-
-result =
-  'Fernando Haddad' : 0,
-  'José Serra' : 0,
-  'Celso Russomano' : 0,
-  'Soninha Francine' : 0,
-  'Gabriel Chalita' : 0,
+ranking = new Ranking()
    
 $ ->
   $("#start-now").click (e) ->
     e.preventDefault()
-    render_view(questions[index])
+    $( "#content" ).html(Mustache.render(window.candidates_list, {}))
+    question_view = Mustache.render(MyWindow().show_question, questions[0])
+    $( "#candidates" ).before(question_view)
+    $( "div.question" ).effect( "slide", {}, 1500 )
     
   $("#agree").live 'click', (e) ->
     e.preventDefault()
-    render_next(true)
+    compute_vote_and_render_next(true)
   
   $("#disagree").live 'click', (e) ->
     e.preventDefault()
-    render_next(false)
+    compute_vote_and_render_next(false)
 
   $("#dont-know").live 'click', (e) ->
     e.preventDefault()
-    render_next(null)
+    render_next()
 
-render_next = (result) ->
-  questions[index].answer = result
-  calculate_scores(questions[index], ->
+render_next = ->
   if (index < questions.length - 1)
-    render_view(questions[++index])
+    render_question(questions[++index])
   else
     render_result()
-  )
 
-candidate_class = (candidate) ->
-  {
-      'Fernando Haddad' : "haddad",
-      'José Serra' : "serra",
-      'Celso Russomano' : "russomano",
-      'Soninha Francine' : "soninha",
-      'Gabriel Chalita' : "chalita"
-  }[candidate]
+compute_vote_and_render_next = (vote) ->
+  question = questions[index]
+  console.log("computando")
+  ranking.compute_vote(vote, question.proposers, question.opponents)
+  console.log("mostrnado")
+  show_ranking(ranking, render_next)
 
-
-calculate_scores = (question, callback) ->
-  for candidate, score of result
-    if question.answer and question.proposers.indexOf(candidate) != -1
-      result[candidate] += 1
-    else if not question.answer and question.proposers.indexOf(candidate) == -1
-      result[candidate] += 1
-    else
-      result[candidate] -= 1
-    id = candidate_class(candidate)
-    console.log("ul#candidates li##{id} label.score")
-    $("ul#candidates li##{id} label.score").css( 'display', "block" )
-    $("ul#candidates li##{id} label.score").effect( 'bounce', {}, 500, callback )
-    if result[candidate] <= 0
-      $("ul#candidates li##{id} label.score").css( 'color', "red" )
-    else
-      $("ul#candidates li##{id} label.score").css( 'color', "green" )
-    $("ul#candidates li##{id} label.score").html( result[candidate] )
+show_ranking = (ranking, callback) ->
+  console.log("score: #{ranking.get_score()}")
+  setTimeout(callback, 1000)
+  for candidate_key, score of ranking.get_score()
+    console.log("#{candidate_key} #{score}")
+    label = $("ul#candidates li##{candidate_key} label.score")
+    continue if score.toString() == label.html()
+    color = if score <= 0 then "red" else "green"
+    label.css( 'color',  color)
+    label.effect( 'bounce', {}, 500 )
+    label.html( score )
 
 render_result = () ->
-  leader = ''
-  max_score = 0
-  for candidate, score of result
-    console.log("#{candidate} => #{score}")
-    if score > max_score
-      leader = candidate
-      max_score = score
+  leaders = ranking.leaders()
   $("#content").html(Mustache.render(MyWindow().result_page, 
-    candidate : leader 
-    candidate_class : candidate_class(leader)
+    leaders : leaders
+    size : "size-#{leaders.length}"
   ))
-  $("div#candidate").fadeIn(1500)
+  $("ul#leaders").fadeIn(1500)
 
-render_view = (data) ->
-  $( "#content" ).html(Mustache.render(MyWindow().show_question, data))
+render_question = (data) ->
+  console.log data
+  $( "div.question" ).replaceWith(Mustache.render(MyWindow().show_question, data))
   $( "div.question" ).effect( "slide", {}, 1500 )
