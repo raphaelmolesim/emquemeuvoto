@@ -36,7 +36,7 @@ compute_vote_and_render_next = (vote) ->
 
 show_ranking = (ranking, callback) ->
   console.log("score: #{ranking.get_score()}")
-  setTimeout(callback, 1000)
+  setTimeout(callback, 300)
   for candidate_key, score of ranking.get_score()
     console.log("#{candidate_key} #{score}")
     label = $("ul#candidates li##{candidate_key} label.score")
