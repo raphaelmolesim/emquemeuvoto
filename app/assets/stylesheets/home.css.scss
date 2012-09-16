@@ -60,3 +60,29 @@ div.serra { background: url(/assets/serra.jpg) no-repeat;}
 div.russomano { background: url(/assets/russomano.jpg)  no-repeat;}
 div.chalita { background: url(/assets/chalita.jpg) no-repeat; }
 div.soninha { background: url(/assets/soninha.jpg) no-repeat; }
+
+ul#share {
+  list-style: none;
+  li { float: left; }
+  margin: 40px auto;
+  width: 520px;
+  height: 160px;
+
+  li + li {
+    margin-left: 200px;
+  }
+  a.facebook {
+    display: block;
+    background: url(/assets/fb.png) no-repeat;
+    width: 154px;
+    height: 154px;
+  }
+
+  a.twitter {
+    display: block;
+    background: url(/assets/twitter.png) no-repeat;
+    width: 154px;
+    height: 154px;
+  }
+}
+

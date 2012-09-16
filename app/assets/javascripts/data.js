@@ -6,7 +6,7 @@ var questions = [
 		description: 'Descrição a ser feito',
 		proposers: [ 'soninha' ],
 		opponents: [ 'serra', 'haddad', 'russomano' ]
-	},
+	},/*
 	{
 		title: 'Escola Período Integral',
 		subtitle: 'Subtítulo a ser feito',
@@ -70,5 +70,5 @@ var questions = [
 		proposers: [ 'soninha', 'serra' ],
 		opponents: [  ]
 	}
-
+*/
 ];

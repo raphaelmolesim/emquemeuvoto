@@ -9,8 +9,10 @@ result_page = "
 	</ul>
   </div>
 
-  <div id='share'>
-    
+  <h2>Ajude-nos a divulgar o nosso site!</h2>
+  <ul id='share'>
+    <li><a href='#' class='facebook'></a></li>
+    <li><a href='#' class='twitter'></a></li>
   </div>
   
  "

@@ -14,10 +14,12 @@
 //= require jquery_ujs
 //= require jquery-ui-1.8.23.custom.min.js
 //= require mustache.js
+//= require all.js
 //= require data.js
 //= require my_window.js
 //= require templates/candidates_list.js.coffee
 //= require templates/show_question.js.coffee
 //= require templates/result.js.coffee
+//= require fb.js
 //= require ranking.js.coffee
 //= require home.js.coffee
