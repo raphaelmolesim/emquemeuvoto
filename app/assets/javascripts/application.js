@@ -16,6 +16,7 @@
 //= require mustache.js
 //= require all.js
 //= require twitter.js
+//= require warning.js
 //= require data.js
 //= require my_window.js
 //= require templates/candidates_list.js.coffee
