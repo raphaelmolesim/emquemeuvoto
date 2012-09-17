@@ -33,10 +33,13 @@ class Ranking
 
 	leaders: ->
 		max_score = 0
+		for candidate_key, score of @scores
+			max_score = score if (score >= max_score)
 		candidates = []
 		for candidate_key, score of @scores
-			if (score >= max_score)
+			if (score == max_score)
 				max_score = score
+				console.log("leader ==> #{candidate_key}")
 				candidates.push(candidate_key)	
 		{ class: item, name : this.get_name(item) } for item in candidates
 

@@ -2,9 +2,10 @@ div.question {
   background-color: #EEEEEE;
   border-radius: 6px 6px 6px 6px;
   margin-top: 30px;
-  padding: 60px;
-  height: 300px;
-  p:nth-child(2) { margin: 10px 0px; }
+  padding: 20px 50px;
+  height: 350px;
+  div.desc { height: 270px; }
+  p:nth-child(2) { margin: 10px 0px;  }
   p:nth-child(3) { font-size: 12px; }
 }
 
@@ -21,6 +22,7 @@ ul#candidates, ul#leaders {
     font-size: 60px;
     font-weight: bold;
     display:none;
+    height: 0px;
   }
   li { padding-top: 205px; width: 160px; height: 80px; float : left; }
   li + li { margin-left: 25px; }
@@ -51,7 +53,7 @@ div#content div.hero-unit ul.size-3 {
 div#content div.hero-unit ul.size-4 { width: 725px; }
 div#content div.hero-unit ul.size-5 { 
     width: 710px;
-    height: 480px
+    height: 480px;
     li + li { margin-left: 110px }
   }
 
