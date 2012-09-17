@@ -15,6 +15,7 @@
 //= require jquery-ui-1.8.23.custom.min.js
 //= require mustache.js
 //= require all.js
+//= require twitter.js
 //= require data.js
 //= require my_window.js
 //= require templates/candidates_list.js.coffee

@@ -12,9 +12,7 @@ $("a.facebook").live ('click', function(e) {
     description: 'Você já decidiu em quem vai votar nesta eleição municipal? Ainda não? Que tal conhecer um pouco mais sobre as propóstas dos candidados? Nós podemos recomendar um cadidato baseado nas propóstas que você concorda ou discorda! Venha conhecer um pouco mais!'
   };
 
-  function callback(response) {
-    //document.getElementById('msg').innerHTML = "Post ID: " + response['post_id'];
-  }
+  function callback(response) { }
 
   FB.ui(obj, callback);
 });
