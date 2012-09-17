@@ -64,22 +64,25 @@ var questions = [
 		title: 'Urbanização de Favelas',
 		subtitle: 'Transformar favelas em bairros',
 		description: 'Consolidar a inserção das favelas no processo de planejamento da cidade relativos ao controle do uso e ocupação do solo. Criar condições para prestação de serviços públicos em favelas, particularmente com serviços de saúde, segurança, limpeza, saneamento básico e manutenção.<br /><br />Abrir espaços para implantação de equipamentos urbanos, como praças, áreas livres, e de lazer. Também Implementar obras de engenharia e/ou remoção de moradias com o objetivo de eliminar situações de risco.',
-		proposers: [ 'serra', 'russomano', 'haddad' ],
-		opponents: [ ]
+		proposers: [ 'serra', 'russomano', 'haddad', 'chalita' ],
+		opponents: [ ],
+		references: [ {'Porposta G. Chalita' : 'http://www.chalita.com.br/index.php/propostas/habita%C3%A7%C3%A3o.html' } ]
 	},
 	{
 		title: 'Descentralização da Gestão Pública',
-		subtitle: '',
-		description: '',
-		proposers: [ 'soninha', 'haddad' ],
-		opponents: [ 'serra' ]
+		subtitle: 'Dar mais autonomia as sub-prefeituras',
+		description: 'Por seu tamanho e complexidade, é impossível pensar a gestão da cidade de São Paulo de forma centralizada. As desigualdades entre as regiões da cidade exigem do poder público uma maior proximidade com as pessoas. A instalação das subprefeituras foi extremamente importante nesse processo, contudo, falta muito ainda para que elas desempenhem seu papel de fortalecimento do poder local. <br /><br />Fortalecimento das subprefeituras e o aumento da descentralização de recursos e grau de decisões. A proposta aqui é que as subprefeituras deixem de ser meros setores administrativos e passem a gerir efetivamente políticas e recursos em suas respectivas regiões.',
+		proposers: [ 'soninha', 'haddad', 'chalita' ],
+		opponents: [ 'serra' ],
+
 	},
 	{
 		title: 'Aumentar o número de professores na sala de aula',
-		subtitle: '',
-		description: '',
+		subtitle: 'Dois professores na sala de aula',
+		description: 'A necessidade de mais professores em sala de aula é premente em casos de extrema defasagem no ensino, ou na existência de alunos com necessidades especiais na sala de aula, que demandam atenção mais individualizada. <br /><br />Nas situações normais de ensino, o professor pode ser acompanhado por um auxiliar de classe ou um estagiário de pedagogia, garantindo a excelência no acompanhamento do aluno',
 		proposers: [ 'soninha', 'serra' ],
-		opponents: [  ]
+		opponents: [  ],
+		references: [ { 'Porposta Soninha F.' : 'http://www.soninha.com.br/wp-content/uploads/2012/08/Programa-de-Governo-2012-Educa%C3%A7%C3%A3o.pdf' } ]
 	}
 
 ];
