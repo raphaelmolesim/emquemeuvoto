@@ -5,7 +5,12 @@ div.question {
   padding: 20px 50px;
   height: 350px;
   div.desc { height: 270px; }
-  p:nth-child(2) { margin: 10px 0px;  }
+  p:nth-child(2) { 
+    color: inherit;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 30px;
+  }
   p:nth-child(3) { font-size: 12px; }
 }
 

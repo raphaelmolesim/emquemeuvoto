@@ -3,7 +3,7 @@ show_question = "
 	<div class='desc'>
 		<h1>{{title}}</h1>
 		<p>{{subtitle}}</p>
-		<p>{{description}}</p>
+		<p>{{&description}}</p>
 	</div>
 	<p>
 		<a id=\"agree\" class=\"btn btn-success btn-large\">Concordo</a>
