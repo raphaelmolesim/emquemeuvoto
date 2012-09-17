@@ -9,8 +9,8 @@ var questions = [
 	},
 	{
 		title: 'Escola Período Integral',
-		subtitle: '',
-		description: '',
+		subtitle: 'Ampliar o tempo de permanência do estudante sob os cuidados da escola',
+		description: 'Expandir no município o programa Mais Educação do Governo Federal. Por este programa, no período de contraturno das aulas, os alunos, sob supervisão, e cuidados da escola, irão para Clubes-Escola. para bibliotecas municipais, exposições, museus etc., atividades que complementem o aprendizado em diversas formas.<br /><br />Esse processo de apropriação da cidade por lógica educadora se dará por meio de parcerias com o Sistema S, o Governo do Estado e a iniciativa privada. Durante todo o período em que o aluno estiver participando de atividades externas, serão garantidos a ele, pelo escola, transporte, alimentação, e cuidados.',
 		proposers: [ 'haddad' ],
 		opponents: [ ]
 	},
