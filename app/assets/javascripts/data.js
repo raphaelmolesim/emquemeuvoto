@@ -34,7 +34,7 @@ var questions = [
 	{
 		title: 'Extensão da Marginal até Guaianazes e extensão da Radial Leste',
 		subtitle: 'Desenvolvimento da Zona Leste começando por obras viárias',
-		description: 'Nossa proposta é desenvolver a criação de empregos regionais em São Paulo. Aqui vamos fazer um pólo industrial e tecnológico. Para isso, tem quer te obras viárias. <br /><br />Vamos prolongar a marginal até Guaianazes e (vamos prolongar) a Radial Leste, que vem lá de Arthur Alvim. Até Guaianazes, são cerca de 9 ou 10 km descontínuos. (Também) vamos fazer corredor de ônibus na Radial Leste inteira. Enfim, temos muito a fazer, muito já foi feito e muito será feito no futuro',
+		description: 'Nossa proposta é desenvolver a criação de empregos regionais em São Paulo. Aqui vamos fazer um pólo industrial e tecnológico. Para isso, tem quer te obras viárias. <br /><br />Vamos prolongar a marginal até Guaianazes e (vamos prolongar) a Radial Leste, que vem lá de Arthur Alvim. Até Guaianazes, são cerca de 9 ou 10 km descontínuos. Enfim, temos muito a fazer, muito já foi feito e muito será feito no futuro',
 		proposers: [ 'serra' ],
 		opponents: [ ],
 		references: [ { 'Promessa de José Serra' : 'http://noticias.terra.com.br/eleicoes/2012/sp/sao-paulo/noticias/0,,OI6100999-EI20654,00-Serra+vai+de+helicoptero+a+zona+leste+e+promete+melhorar+transporte.html' } ]
@@ -59,7 +59,7 @@ var questions = [
 	},
 	{
 		title: 'Investimento da Prefeitura em Metrô, trens ou Monotrilho',
-		subtitle: 'A prefeitura apoiando o Governo do Estado para viabilizar uma expasão mais rápida da rede',
+		subtitle: 'A prefeitura apoiando o Governo do Estado para viabilizar uma expansão mais rápida da rede',
 		description: 'É importante o apoio ao metro e a CPTM. O governo do Estado já está tocando quatro linhas novas. No ano que vem serão sete.<br/ ><br/ > Também viabilizar estudos para implantação do veiculo leve sobre trilhos.',
 		proposers: [ 'serra', 'russomano' ],
 		opponents: [ 'soninha' ],
