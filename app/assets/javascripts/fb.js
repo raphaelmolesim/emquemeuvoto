@@ -9,7 +9,7 @@ $("a.facebook").live ('click', function(e) {
     picture: 'http://www.emquemeuvoto.com.br/assets/logo.jpg',
     name: 'Em Quem Eu Voto?',
     caption: 'Podemos te ajudar a escolher um candidato para esta próxima eleição municipal!',
-    description: 'Você já decidiu em quem vai votar nesta eleição municipal? Ainda não? Que tal conhecer um pouco mais sobre as propóstas dos candidados? Nós podemos recomendar um cadidato baseado nas propóstas que você concorda ou discorda! Venha conhecer um pouco mais!'
+    description: 'Você já decidiu em quem vai votar nesta eleição municipal? Ainda não? Que tal conhecer um pouco mais sobre as propostas dos candidados? Nós podemos recomendar um candidato baseado nas propostas que você concorda ou discorda! Venha conhecer um pouco mais!'
   };
 
   function callback(response) { }

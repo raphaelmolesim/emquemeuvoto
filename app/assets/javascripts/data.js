@@ -11,7 +11,14 @@ var questions = [
 		title: 'Escola Período Integral',
 		subtitle: 'Ampliar o tempo de permanência do estudante sob os cuidados da escola',
 		description: 'Expandir no município o programa Mais Educação do Governo Federal. Por este programa, no período de contraturno das aulas, os alunos, sob supervisão, e cuidados da escola, irão para Clubes-Escola. para bibliotecas municipais, exposições, museus etc., atividades que complementem o aprendizado em diversas formas.<br /><br />Esse processo de apropriação da cidade por lógica educadora se dará por meio de parcerias com o Sistema S, o Governo do Estado e a iniciativa privada. Durante todo o período em que o aluno estiver participando de atividades externas, serão garantidos a ele, pelo escola, transporte, alimentação, e cuidados.',
-		proposers: [ 'haddad' ],
+		proposers: [ 'haddad', 'chalita' ],
+		opponents: [ ]
+	},
+	{
+		title: 'Escolas abertas no fim de semana',
+		subtitle: 'Abertura das escolas municipais aos finais de semana para prática de esportes e eventos culturais',
+		description: 'O projeto prevê a abertura das 545 escolas de ensino fundamental da rede municipal aos finais de semana. A cooperação com outras secretarias do governo vai permitir a promoção de eventos culturais e práticas esportivas no espaço escolar. Nos fins de semana, as salas de informática serão usadas como telecentros.<br /><br />Os espaços ociosos das escolas serão usados para ensino profissionalizante, no período noturno. Estão previstas também oficinas e cursos técnicos noturnos e nos fins de semana, voltados para as mulheres e para a terceira idade.',
+		proposers: [ 'chalita' ],
 		opponents: [ ]
 	},
 	{
@@ -32,7 +39,7 @@ var questions = [
 		title: 'Repovoar o Centro',
 		subtitle: '',
 		description: '',
-		proposers: [ 'soninha', 'haddad', 'russomano' ],
+		proposers: [ 'soninha', 'haddad', 'russomano', 'chalita' ],
 		opponents: [ ]
 	},
 	{
