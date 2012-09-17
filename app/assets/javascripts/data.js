@@ -51,14 +51,21 @@ var questions = [
 		subtitle: 'Desenvolver campanhas de convivência pacífica',
 		description: 'Combater defasagem de LGBTs da sala de aula e fomentar em programas de educação de jovens e adultos a inclusão social de LGBTs.<br /><br />Realizar formação continuada dos profissionais da rede municipal de ensino e desenvolver programas para aceitação de diferença junto aos estudantes e família.',
 		proposers: [ 'soninha', 'haddad' ],
-		opponents: [ ]
+		opponents: [ 'chalita', 'serra'],
+		references: [ 
+			{ 'Chalita critica kit anti-homofobia' : 'http://noticias.terra.com.br/eleicoes/2012/noticias/0,,OI5673272-EI19136,00-SP+Chalita+poupa+Haddad+mas+critica+kit+antihomofobia.html' },
+			{ 'Serra promete vetar Lei da homofobia' : 'http://www1.folha.uol.com.br/poder/820774-em-convencao-da-assembleia-de-deus-serra-promete-vetar-lei-da-homofobia.shtml'} 
+		]
 	},
 	{
 		title: 'Investimento da Prefeitura em Metrô, trens ou Monotrilho',
 		subtitle: 'A prefeitura apoiando o Governo do Estado para viabilizar uma expasão mais rápida da rede',
 		description: 'É importante o apoio ao metro e a CPTM. O governo do Estado já está tocando quatro linhas novas. No ano que vem serão sete.<br/ ><br/ > Também viabilizar estudos para implantação do veiculo leve sobre trilhos.',
 		proposers: [ 'serra', 'russomano' ],
-		opponents: [ 'soninha' ]
+		opponents: [ 'soninha' ],
+		references: [ 
+			{ 'Proposta C. Russomano' : 'http://celsorussomanno.com.br/propostas/viabilizar-estudos-para-implantacao-do-veiculo-leve-sobre-trilhos/' } 
+		]
 	},
 	{
 		title: 'Urbanização de Favelas',
@@ -66,7 +73,9 @@ var questions = [
 		description: 'Consolidar a inserção das favelas no processo de planejamento da cidade relativos ao controle do uso e ocupação do solo. Criar condições para prestação de serviços públicos em favelas, particularmente com serviços de saúde, segurança, limpeza, saneamento básico e manutenção.<br /><br />Abrir espaços para implantação de equipamentos urbanos, como praças, áreas livres, e de lazer. Também Implementar obras de engenharia e/ou remoção de moradias com o objetivo de eliminar situações de risco.',
 		proposers: [ 'serra', 'russomano', 'haddad', 'chalita' ],
 		opponents: [ ],
-		references: [ {'Porposta G. Chalita' : 'http://www.chalita.com.br/index.php/propostas/habita%C3%A7%C3%A3o.html' } ]
+		references: [ 
+			{ 'Porposta G. Chalita' : 'http://www.chalita.com.br/index.php/propostas/habita%C3%A7%C3%A3o.html' } 
+		]
 	},
 	{
 		title: 'Descentralização da Gestão Pública',
@@ -74,7 +83,7 @@ var questions = [
 		description: 'Por seu tamanho e complexidade, é impossível pensar a gestão da cidade de São Paulo de forma centralizada. As desigualdades entre as regiões da cidade exigem do poder público uma maior proximidade com as pessoas. A instalação das subprefeituras foi extremamente importante nesse processo, contudo, falta muito ainda para que elas desempenhem seu papel de fortalecimento do poder local. <br /><br />Fortalecimento das subprefeituras e o aumento da descentralização de recursos e grau de decisões. A proposta aqui é que as subprefeituras deixem de ser meros setores administrativos e passem a gerir efetivamente políticas e recursos em suas respectivas regiões.',
 		proposers: [ 'soninha', 'haddad', 'chalita' ],
 		opponents: [ 'serra' ],
-
+		references: [ {'Diretrizes G. Chalita' : 'http://www.chalita.com.br/index.php/propostas/todas-as-diretrizes.html?showall=&start=2' }]
 	},
 	{
 		title: 'Aumentar o número de professores na sala de aula',
