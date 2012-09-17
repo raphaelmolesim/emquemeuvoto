@@ -55,15 +55,15 @@ var questions = [
 	},
 	{
 		title: 'Investimento da Prefeitura em Metrô, trens ou Monotrilho',
-		subtitle: '',
-		description: '',
+		subtitle: 'A prefeitura apoiando o Governo do Estado para viabilizar uma expasão mais rápida da rede',
+		description: 'É importante o apoio ao metro e a CPTM. O governo do Estado já está tocando quatro linhas novas. No ano que vem serão sete.<br/ ><br/ > Também viabilizar estudos para implantação do veiculo leve sobre trilhos.',
 		proposers: [ 'serra', 'russomano' ],
 		opponents: [ 'soninha' ]
 	},
 	{
 		title: 'Urbanização de Favelas',
-		subtitle: '',
-		description: '',
+		subtitle: 'Transformar favelas em bairros',
+		description: 'Consolidar a inserção das favelas no processo de planejamento da cidade relativos ao controle do uso e ocupação do solo. Criar condições para prestação de serviços públicos em favelas, particularmente com serviços de saúde, segurança, limpeza, saneamento básico e manutenção.<br /><br />Abrir espaços para implantação de equipamentos urbanos, como praças, áreas livres, e de lazer. Também Implementar obras de engenharia e/ou remoção de moradias com o objetivo de eliminar situações de risco.',
 		proposers: [ 'serra', 'russomano', 'haddad' ],
 		opponents: [ ]
 	},
