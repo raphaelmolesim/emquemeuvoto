@@ -26,9 +26,9 @@ $("#share-candidate").live('click', function(e) {
   var ranking = new Ranking();
   var article_and_name = null;
   if (id == "soninha")
-    article_and_name = 'o ' + ranking.get_name(id);
-  else
     article_and_name = 'a ' + ranking.get_name(id);
+  else
+    article_and_name = 'o ' + ranking.get_name(id);
 
   var obj = {
     method: 'feed',
