@@ -1,6 +1,17 @@
 var questions = [
 
 	{
+		title: 'Revisar o regime de progressão continuada',
+		subtitle: 'Avaliar a eficácia do regime',
+		description: 'A progressão continuada tem por objetivo regularizar o fluxo de alunos ao longo dos anos de escola, para superar o fracasso das altas taxas de reprovação. A idéia é que com isso, tenham acesso ao estudo, sem repetências ou interrupções, que criem desânimo e/ou prejudiquem o aprendizado.<br /></br />Revisar o modelo de progressão continuada e aprovação automática criado pelo PSDB e mantido durante o Governo do PT na cidade de São Paulo.',
+		proposers: [ 'russomano' ],
+		opponents: [ 'chalita', 'soninha', 'serra', 'haddad' ],
+		references: [
+			{ "Chalita diz que educação precisa de 'mais dinheiro e não mais provas'" : "http://www1.folha.uol.com.br/folha/educacao/ult305u15379.shtml" },
+			{ "Propostas C. Russomano" : "http://celsorussomanno.com.br/propostas/implementar-as-inspetorias-distritais-a-fim-de-aproximar-o-comando-da-gcm-da-populacao-local/" }
+		]
+	},
+	{
 		title: 'Pedágio Urbano',
 		subtitle: 'Desestimular o uso do automóvel em zonas congestionadas e bem servidas de transporte público',
 		description: 'Realizadas algumas obras de melhoria no sistema de transporte e na integração entre automóvel-transporte coletivo (com a ampliação do número de garagens junto a estações de trem, metrô e ônibus fora da região central), será estabelecido um perímetro dentro do qual a circulação em automóvel particular, nos horários de maior movimento, estará sujeita à cobrança de uma taxa. Toda a arrecadação será investida na melhoria do transporte coletivo.<br /><br />A arrecadação será monitorada em tempo real por um sistema informatizado que  poderá ser acompanhado pela internet, garantindo sua total transparência, o que é  fundamental para o sucesso do sistema. Serão definidos os projetos no sistema de transporte público que receberão essas receitas de maneira que o benefício será visível e fiscalizável por qualquer cidadão.',
@@ -13,6 +24,17 @@ var questions = [
 		description: 'Expandir no município o programa Mais Educação do Governo Federal. Por este programa, no período de contraturno das aulas, os alunos, sob supervisão, e cuidados da escola, irão para Clubes-Escola. para bibliotecas municipais, exposições, museus etc., atividades que complementem o aprendizado em diversas formas.<br /><br />Esse processo de apropriação da cidade por lógica educadora se dará por meio de parcerias com o Sistema S, o Governo do Estado e a iniciativa privada. Durante todo o período em que o aluno estiver participando de atividades externas, serão garantidos a ele, pelo escola, transporte, alimentação, e cuidados.',
 		proposers: [ 'haddad', 'chalita' ],
 		opponents: [ ]
+	},
+	{
+		title: 'Aproximar a GCM da população',
+		subtitle: 'Transparência na atuação da GCM',
+		description: 'Implementar as Inspetorias Distritais a fim de aproximar o comando da GCM da população local. Ou Aprimorar, fortalecer e ampliar o papel dos CONSEGs (Conselhos de Segurança), de modo a aumentar a efetividade e a transparência às reivindicações das comunidades locais.  ',
+		proposers: [ 'soninha', 'russomano' ],
+		opponents: [ ],
+		references: [
+			{ "Propostas S. Francine" : "http://www.soninha.com.br/wp-content/uploads/2012/08/Programa-de-Governo-2012-Seguran%C3%A7a.pdf" },
+			{ "Propostas C. Russomano" : "http://celsorussomanno.com.br/propostas/implementar-as-inspetorias-distritais-a-fim-de-aproximar-o-comando-da-gcm-da-populacao-local/" }
+		]
 	},
 	{
 		title: 'Escolas abertas no fim de semana',
@@ -78,6 +100,16 @@ var questions = [
 		]
 	},
 	{
+		title: 'Criar sala de monitoramento nas subprefeituras',
+		subtitle: 'Subprefeituras altamente equipadas',
+		description: 'Enfatizar o trabalho das subprefeituras na segurança pública. Hoje comandadas por ex-policias militares, vamos criar uma sala de monitoramento em cada uma das 31 subprefeituras, equipada com tecnologia para acompanhar os acontecimentos da região. Essas salas serão integradas a uma sala de situação na Prefeitura, que permitirá acompanhar toda a cidade.',
+		proposers: [ 'serra' ],
+		opponents: [ ],
+		references: [
+			{ "Propostas J Serra" : "http://portalserra.sodavirtual.com.br/propostas/" }
+		]
+	},
+	{
 		title: 'Descentralização da Gestão Pública',
 		subtitle: 'Dar mais autonomia as sub-prefeituras',
 		description: 'Por seu tamanho e complexidade, é impossível pensar a gestão da cidade de São Paulo de forma centralizada. As desigualdades entre as regiões da cidade exigem do poder público uma maior proximidade com as pessoas. A instalação das subprefeituras foi extremamente importante nesse processo, contudo, falta muito ainda para que elas desempenhem seu papel de fortalecimento do poder local. <br /><br />Fortalecimento das subprefeituras e o aumento da descentralização de recursos e grau de decisões. A proposta aqui é que as subprefeituras deixem de ser meros setores administrativos e passem a gerir efetivamente políticas e recursos em suas respectivas regiões.',
@@ -92,6 +124,18 @@ var questions = [
 		proposers: [ 'soninha', 'serra' ],
 		opponents: [  ],
 		references: [ { 'Porposta Soninha F.' : 'http://www.soninha.com.br/wp-content/uploads/2012/08/Programa-de-Governo-2012-Educa%C3%A7%C3%A3o.pdf' } ]
+	},
+	{
+		title: 'Revitalizar o centro o da Cidade',
+		subtitle: 'O centro como uma referência urbanística',
+		description: 'Revitalizar bairros centrais de São Paulo como a Santa Efigênia, Liberdade, Bom Retiro e Brás. Através de uma reconfiguração do Parque Dom Pedro, construção de teatro, pólos de moda , etc., de modo a garantir que o centro seja um patrimônio de toda a cidade e uma referência em qualidade urbanística.',
+		proposers: [ 'serra', 'chalita', 'haddad' ],
+		opponents: [  ],
+		references: [
+			{ "Propostas J. Serra" : "http://portalserra.sodavirtual.com.br/propostas/" },
+			{ "Precisamos revitalizar o centro do Brás à Barra Funda, diz Chalita" : "http://www.gabrielchalita.com.br/index.php/noticias/396-precisamos-revitalizar-o-centro-do-br%C3%A1s-%C3%A0-barra-funda,-diz-chalita.html"},
+			{ "Propostas F. Haddad" : "http://pensenovotv.com.br/files/programa_governo_haddad_desenvolvimento_urbano.pdf"}
+		]
 	}
 
 ];
