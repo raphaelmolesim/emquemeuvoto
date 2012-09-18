@@ -35,7 +35,7 @@ ul#candidates, ul#leaders {
     display:none;
     height: 0px;
   }
-  li { padding-top: 205px; width: 160px; height: 80px; float : left; }
+  li { padding-top: 205px; width: 160px; height: 30px; float : left; }
   li + li { margin-left: 25px; }
   li#haddad { background: url(/assets/haddad.jpg) no-repeat;}
   li#serra { background: url(/assets/serra.jpg) no-repeat;}
@@ -44,12 +44,21 @@ ul#candidates, ul#leaders {
   li#soninha { background: url(/assets/soninha.jpg) no-repeat; }
 }
 
+div#share-modal ul#leaders { width: 200px; }
+
 hr { clear:both; }
 
 div.hero-unit ul#leaders { 
   display:none; 
   height: 200px;
   margin: 20px auto;
+}
+
+div#result-page {
+  h3 {
+    margin-top: 50px;
+    text-align: center;
+  }
 }
 
 div#content div.hero-unit ul.size-1 { width: 180px; }

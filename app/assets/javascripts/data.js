@@ -3,7 +3,7 @@ var questions = [
 	{
 		title: 'Revisar o regime de progressão continuada',
 		subtitle: 'Avaliar a eficácia do regime',
-		description: 'A progressão continuada tem por objetivo regularizar o fluxo de alunos ao longo dos anos de escola, para superar o fracasso das altas taxas de reprovação. A idéia é que com isso, tenham acesso ao estudo, sem repetências ou interrupções, que criem desânimo e/ou prejudiquem o aprendizado.<br /></br />Revisar o modelo de progressão continuada e aprovação automática criado pelo PSDB e mantido durante o Governo do PT na cidade de São Paulo.',
+		description: 'A progressão continuada tem por objetivo regularizar o fluxo de alunos ao longo dos anos de escola, para superar o fracasso das altas taxas de reprovação. A ideia é que com isso, tenham acesso ao estudo, sem repetências ou interrupções, que criem desânimo e/ou prejudiquem o aprendizado.<br /></br />Revisar o modelo de progressão continuada e aprovação automática criado pelo PSDB e mantido durante o Governo do PT na cidade de São Paulo.',
 		proposers: [ 'russomano' ],
 		opponents: [ 'chalita', 'soninha', 'serra', 'haddad' ],
 		references: [
@@ -54,9 +54,9 @@ var questions = [
 		]
 	},
 	{
-		title: 'Extensão da Marginal até Guaianazes e extensão da Radial Leste',
+		title: 'Extensão da Marginal até Guaianases e extensão da Radial Leste',
 		subtitle: 'Desenvolvimento da Zona Leste começando por obras viárias',
-		description: 'Nossa proposta é desenvolver a criação de empregos regionais em São Paulo. Aqui vamos fazer um pólo industrial e tecnológico. Para isso, tem quer te obras viárias. <br /><br />Vamos prolongar a marginal até Guaianazes e (vamos prolongar) a Radial Leste, que vem lá de Arthur Alvim. Até Guaianazes, são cerca de 9 ou 10 km descontínuos. Enfim, temos muito a fazer, muito já foi feito e muito será feito no futuro',
+		description: 'Nossa proposta é desenvolver a criação de empregos regionais em São Paulo. Aqui vamos fazer um pólo industrial e tecnológico. Para isso, tem quer te obras viárias. <br /><br />Vamos prolongar a marginal até Guaianases e (vamos prolongar) a Radial Leste, que vem lá de Arthur Alvim. Até Guaianases, são cerca de 9 ou 10 km descontínuos. Enfim, temos muito a fazer, muito já foi feito e muito será feito no futuro',
 		proposers: [ 'serra' ],
 		opponents: [ ],
 		references: [ { 'Promessa de José Serra' : 'http://noticias.terra.com.br/eleicoes/2012/sp/sao-paulo/noticias/0,,OI6100999-EI20654,00-Serra+vai+de+helicoptero+a+zona+leste+e+promete+melhorar+transporte.html' } ]

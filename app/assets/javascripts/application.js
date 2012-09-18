@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require jquery-ui-1.8.23.custom.min.js
 //= require mustache.js
+//= require bootstrap.js
 //= require all.js
 //= require twitter.js
 //= require warning.js
@@ -22,6 +23,6 @@
 //= require templates/candidates_list.js.coffee
 //= require templates/show_question.js.coffee
 //= require templates/result.js.coffee
-//= require fb.js
 //= require ranking.js.coffee
 //= require home.js.coffee
+//= require fb.js

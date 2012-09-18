@@ -44,11 +44,21 @@ show_ranking = (ranking, callback) ->
 
 render_result = () ->
   leaders = ranking.leaders()
+  h3 = if leaders.length == 1 
+    "<h3><a href='#' class='toggle-modal'>Compartilhe o seu candidato!</a><h3>" 
+  else
+    "<h3 style='color:red;'>Você escolheu muitas vezes \"Não tenho opinião formada\", que tal estudar um pouco?<h3>"
   $("#content").html(Mustache.render(MyWindow().result_page, 
     leaders : leaders
-    size : "size-#{leaders.length}"
+    size : "size-#{leaders.length}",
+    link : h3,
   ))
-  $("ul#leaders").fadeIn(1500)
+  $("ul#leaders").fadeIn(1500, ->
+    if leaders.length == 1
+      setTimeout(->
+        $('#share-modal').modal()
+      , 2000)
+  )
 
 render_question = (data) ->
   $( "div.question" ).replaceWith(Mustache.render(MyWindow().show_question, data))

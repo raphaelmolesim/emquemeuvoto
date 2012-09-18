@@ -25,7 +25,7 @@ class Ranking
 	get_name: (candidate_class) -> 
 		{
 			"haddad" : 'Fernando Haddad',
-			"serra" : 'serra',
+			"serra" : 'José Serra',
 			"russomano" : 'Celso Russomano',
 			"soninha" : 'Soninha Francine',
 			"chalita" : 'Gabriel Chalita'
