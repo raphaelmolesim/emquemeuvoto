@@ -1,6 +1,7 @@
 index = 0
 ranking = new Ranking()
-   
+mode = null
+
 $ ->
   $("#start-now").click (e) ->
     e.preventDefault()
