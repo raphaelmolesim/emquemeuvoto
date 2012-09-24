@@ -4,11 +4,38 @@ ranking = new Ranking()
 $ ->
   $("#start-now").click (e) ->
     e.preventDefault()
-    $( "#content" ).html(Mustache.render(window.candidates_list, {}))
-    question_view = Mustache.render(MyWindow().show_question, questions[0])
-    $( "#candidates" ).before(question_view)
-    $( "div.question" ).effect( "slide", {}, 1500 )
-    
+    view = Mustache.render(MyWindow().choose_method, {})
+    $( "#content" ).html(view)
+    $( "div.hero-unit" ).effect( "slide", {}, 1500 )
+  
+  $("#iterative-mode").live 'click', (e) ->
+    e.preventDefault()
+    render_iterative_mode()  
+  
+  $("#by_priority").live 'click', (e) ->
+    e.preventDefault()
+    index = 0
+    ranking = new Ranking()
+    render_questions_by_priority()
+
+  $("a.question").live 'click', (e) ->
+    e.preventDefault()
+    question = questions[$(this).attr('id')]
+    view = Mustache.render(MyWindow().desc_question, question)
+    $('#question_modal').html(view)
+    $('#question_modal').modal('show')
+
+  $("button#rank_by_priority").live 'click', (e) ->
+    e.preventDefault()
+    links = $("ul#questions li a.question")
+    i = links.length
+    for item in links
+      $link = $(item)
+      id = $link.attr('id')
+      console.log("-> #{id}")
+      ranking.compute_priority(questions[id].proposers, i--)
+    render_result()
+
   $("#agree").live 'click', (e) ->
     e.preventDefault()
     compute_vote_and_render_next(true)
@@ -21,6 +48,16 @@ $ ->
     e.preventDefault()
     render_next()
 
+  $("a.priority").live 'click', (e) ->
+    e.preventDefault()
+    $element = $(this)
+    if $element.hasClass("selected")
+      $element.removeClass("selected")
+      $element.addClass("unselected")
+    else
+      $element.removeClass("unselected")
+      $element.addClass("selected")
+
 render_next = ->
   if (index < questions.length - 1)
     render_question(questions[++index])
@@ -29,7 +66,8 @@ render_next = ->
 
 compute_vote_and_render_next = (vote) ->
   question = questions[index]
-  ranking.compute_vote(vote, question.proposers, question.opponents)
+  priority = $("a.priority").hasClass("selected")
+  ranking.compute_vote(vote, priority, question.proposers, question.opponents)
   show_ranking(ranking, render_next)
 
 show_ranking = (ranking, callback) ->
@@ -47,7 +85,7 @@ render_result = () ->
   h3 = if leaders.length == 1 
     "<h3><a href='#' class='toggle-modal'>Compartilhe o seu candidato!</a><h3>" 
   else
-    "<h3 style='color:red;'>Você escolheu muitas vezes \"Não tenho opinião formada\", que tal estudar um pouco?<h3>"
+    "<h3><a href='#' id='by_priority'>Quer desempatar? Tente por prioridade!</a><h3>"
   $("#content").html(Mustache.render(MyWindow().result_page, 
     leaders : leaders
     size : "size-#{leaders.length}",
@@ -63,3 +101,21 @@ render_result = () ->
 render_question = (data) ->
   $( "div.question" ).replaceWith(Mustache.render(MyWindow().show_question, data))
   $( "div.question" ).effect( "slide", {}, 1500 )
+
+render_iterative_mode = ->
+  $( "#content" ).html(Mustache.render(window.candidates_list, {}))
+  question_view = Mustache.render(MyWindow().show_question, questions[0])
+  $( "#candidates" ).before(question_view)
+  $( "div.question" ).effect( "slide", {}, 1500 )
+
+render_questions_by_priority = ->
+  question.id = index++ for question in questions
+  view = Mustache.render(MyWindow().priorize_questions, { questions : questions })
+  $( "#content" ).html(view)
+  $( "ul#questions" ).sortable
+    revert: true
+  $( "ul#questions" ).draggable
+    connectToSortable: "ul#questions"
+    helper: "clone"
+    revert: "invalid"
+  $("ul li").disableSelection()

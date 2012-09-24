@@ -9,7 +9,7 @@ result_page = "
 	 </ul>
 
    {{&link}}
-    
+
   </div>
 
   <h2>Ajude-nos a divulgar o nosso site!</h2>

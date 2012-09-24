@@ -5,6 +5,7 @@ show_question = "
 		<p>{{subtitle}}</p>
 		<p>{{&description}}</p>
 	</div>
+	<p><a class='priority unselected'>Eu priorizo isso!!!</a><p>
 	<p>
 		<a id=\"agree\" class=\"btn btn-success btn-large\">Concordo</a>
 		<a id=\"disagree\" class=\"btn btn-danger btn-large\">Discordo</a>

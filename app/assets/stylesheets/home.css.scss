@@ -4,7 +4,7 @@ div.question {
   margin-top: 30px;
   padding: 20px 50px;
   height: 350px;
-  div.desc { height: 270px; }
+  div.desc { height: 240px; }
   p:nth-child(2) { 
     color: inherit;
     font-size: 18px;
@@ -12,6 +12,50 @@ div.question {
     line-height: 30px;
   }
   p:nth-child(3) { font-size: 12px; }
+  a.priority { 
+    padding: 7px 0px 5px 40px;
+  }
+  a.unselected { background: url(/assets/star_unclicked.png) no-repeat; }
+  a.selected { background: url(/assets/star.png) no-repeat; }
+}
+
+div.priorize_questions {
+  background-color: #EEEEEE;
+  border-radius: 6px 6px 6px 6px;
+  margin-top: 30px;
+  padding: 20px 50px;
+  height: 800px;
+  div#question_modal { 
+    div.desc { padding: 10px 30px }
+  }
+  ul#questions {
+    background-color: white;
+    width: 600px;
+    li {
+      a:hover {
+        border-color: #AAA;
+        text-decoration: underline;
+      }
+      a.question {
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+    }
+  }
+}
+
+div#choose_method {
+  height: 300px;
+  div {
+    text-align: center;
+    width: 43%;
+    margin: 0px;
+    padding: 25px;
+    float: left;
+    a { font-size: 30px; }
+  }
+
 }
 
 img#logo { float: right; width: 200px; height: 200px;}

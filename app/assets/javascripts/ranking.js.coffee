@@ -7,17 +7,22 @@ class Ranking
 			'soninha' : 0
 			'chalita' : 0
 
-	compute_vote: (vote, proposers, oppenents) ->
+	compute_vote: (vote, priority, proposers, oppenents) ->
 		if (vote)
+			weight = if priority then 2 else 1
 			for p in proposers
-				@scores[p] += 1
-			for o in oppenents
-				@scores[o] -= 1
+				@scores[p] += 1 * weight
+			#for o in oppenents
+			#	@scores[o] -= 1
 		else
 			for p in proposers
-				@scores[p] -= 1
-			for o in oppenents
-				@scores[o] += 1
+				@scores[p] -= 2
+			#for o in oppenents
+			#	@scores[o] += 1
+
+	compute_priority: (proposers, priority) ->
+		for p in proposers
+			@scores[p] += priority
 
 	get_score: ->
 		@scores

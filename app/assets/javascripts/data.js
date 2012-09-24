@@ -1,9 +1,9 @@
 var questions = [
 
 	{
-		title: 'Revisar o regime de progressão continuada',
-		subtitle: 'Avaliar a eficácia do regime',
-		description: 'A progressão continuada tem por objetivo regularizar o fluxo de alunos ao longo dos anos de escola, para superar o fracasso das altas taxas de reprovação. A ideia é que com isso, tenham acesso ao estudo, sem repetências ou interrupções, que criem desânimo e/ou prejudiquem o aprendizado.<br /></br />Revisar o modelo de progressão continuada e aprovação automática criado pelo PSDB e mantido durante o Governo do PT na cidade de São Paulo.',
+		title: 'Acabar com o regime de progressão continuada',
+		subtitle: 'A progressão libera vagas, mas não ensina',
+		description: 'A progressão continuada tem por objetivo regularizar o fluxo de alunos ao longo dos anos de escola, para superar o fracasso das altas taxas de reprovação. A ideia é que com isso, tenham acesso ao estudo, sem repetências ou interrupções, que criem desânimo e/ou prejudiquem o aprendizado.<br /></br /> Porém no Brasil a progressão libera vagas, mas não ensina. Vamos fazer o contrário, com que a criança aprenda, e se ela for mal na avaliação, ela vai ter um professor asssistente no dia a dia, se ela estuda de manhã, a tarde pode fazer o acompanhamento ou vice-versa.',
 		proposers: [ 'russomano' ],
 		opponents: [ 'chalita', 'soninha', 'serra', 'haddad' ],
 		references: [
@@ -26,7 +26,7 @@ var questions = [
 		opponents: [ ]
 	},
 	{
-		title: 'Aproximar a GCM da população',
+		title: 'Aproximar a Guada Civil Metropolitana da população',
 		subtitle: 'Transparência na atuação da GCM',
 		description: 'Implementar as Inspetorias Distritais a fim de aproximar o comando da GCM da população local. Ou Aprimorar, fortalecer e ampliar o papel dos CONSEGs (Conselhos de Segurança), de modo a aumentar a efetividade e a transparência às reivindicações das comunidades locais.  ',
 		proposers: [ 'soninha', 'russomano' ],
@@ -73,7 +73,7 @@ var questions = [
 		subtitle: 'Desenvolver campanhas de convivência pacífica',
 		description: 'Combater defasagem de LGBTs da sala de aula e fomentar em programas de educação de jovens e adultos a inclusão social de LGBTs.<br /><br />Realizar formação continuada dos profissionais da rede municipal de ensino e desenvolver programas para aceitação de diferença junto aos estudantes e família.',
 		proposers: [ 'soninha', 'haddad' ],
-		opponents: [ 'chalita', 'serra'],
+		opponents: [ 'chalita', 'serra' ],
 		references: [ 
 			{ 'Chalita critica kit anti-homofobia' : 'http://noticias.terra.com.br/eleicoes/2012/noticias/0,,OI5673272-EI19136,00-SP+Chalita+poupa+Haddad+mas+critica+kit+antihomofobia.html' },
 			{ 'Serra promete vetar Lei da homofobia' : 'http://www1.folha.uol.com.br/poder/820774-em-convencao-da-assembleia-de-deus-serra-promete-vetar-lei-da-homofobia.shtml'} 
