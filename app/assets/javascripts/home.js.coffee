@@ -94,16 +94,14 @@ render_result = () ->
   ))
   $("ul#leaders").fadeIn(1500, ->
     if leaders.length == 1
-      for question in questions
-        console.log(leaders[0])
-        console.log (question.proposers.indexOf(leaders[0].class) != -1 )
-        if question.proposers.indexOf(leaders[0].class) != -1 
-          question.candidate_opnion = 'like' 
-        else 
-          question.candidate_opnion = 'dislike'
-        console.log(" #{question.title} = #{question.candidate_opnion} #{question.my_vote}")
-      $("#explanation").html(Mustache.render(MyWindow().explanation, 
-        questions : questions))
+      if mode == "iterative"
+        for question in questions
+          if question.proposers.indexOf(leaders[0].class) != -1 
+            question.candidate_opnion = 'like' 
+          else 
+            question.candidate_opnion = 'dislike'
+        $("#explanation").html(Mustache.render(MyWindow().explanation, 
+          questions : questions))
       setTimeout(->
         $('#share-modal').modal()
       , 2000)
@@ -114,12 +112,14 @@ render_question = (data) ->
   $( "div.question" ).effect( "slide", {}, 1500 )
 
 render_iterative_mode = ->
+  mode = "iterative"
   $( "#content" ).html(Mustache.render(window.candidates_list, {}))
   question_view = Mustache.render(MyWindow().show_question, questions[0])
   $( "#candidates" ).before(question_view)
   $( "div.question" ).effect( "slide", {}, 1500 )
 
 render_questions_by_priority = ->
+  mode = "by_priority"
   question.id = index++ for question in questions
   view = Mustache.render(MyWindow().priorize_questions, { questions : questions })
   $( "#content" ).html(view)
