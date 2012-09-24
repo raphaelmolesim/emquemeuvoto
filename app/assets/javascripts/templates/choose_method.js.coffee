@@ -8,7 +8,7 @@ choose_method = "
   </div>
   <div>
   	<a id='by_priority'>Através de Prioridades</a>
-  	 <p>Desta forma você será aprensado a todas as propostas e terá de ordenalas de acordo com a prioridade que você dá a elas. Este modo é mais preciso, porém mais demorado também.</p>
+  	 <p>Desta forma você será apresentado a todas as propostas e terá de ordenalas de acordo com a prioridade que você dá a elas. Este modo é mais preciso, porém mais demorado também.</p>
   </div>
 </div>
 "
