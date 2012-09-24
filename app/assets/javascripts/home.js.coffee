@@ -67,6 +67,7 @@ render_next = ->
 compute_vote_and_render_next = (vote) ->
   question = questions[index]
   priority = $("a.priority").hasClass("selected")
+  question.my_vote = if vote then 'like' else 'dislike'
   ranking.compute_vote(vote, priority, question.proposers, question.opponents)
   show_ranking(ranking, render_next)
 
@@ -83,9 +84,9 @@ show_ranking = (ranking, callback) ->
 render_result = () ->
   leaders = ranking.leaders()
   h3 = if leaders.length == 1 
-    "<h3><a href='#' class='toggle-modal'>Compartilhe o seu candidato!</a><h3>" 
+    "<h3><a href='#' class='toggle-modal'>Compartilhe o seu candidato!</a></h3>"
   else
-    "<h3><a href='#' id='by_priority'>Quer desempatar? Tente por prioridade!</a><h3>"
+    "<h3><a href='#' id='by_priority'>Quer desempatar? Tente por prioridade!</a></h3>"
   $("#content").html(Mustache.render(MyWindow().result_page, 
     leaders : leaders
     size : "size-#{leaders.length}",
@@ -93,6 +94,16 @@ render_result = () ->
   ))
   $("ul#leaders").fadeIn(1500, ->
     if leaders.length == 1
+      for question in questions
+        console.log(leaders[0])
+        console.log (question.proposers.indexOf(leaders[0].class) != -1 )
+        if question.proposers.indexOf(leaders[0].class) != -1 
+          question.candidate_opnion = 'like' 
+        else 
+          question.candidate_opnion = 'dislike'
+        console.log(" #{question.title} = #{question.candidate_opnion} #{question.my_vote}")
+      $("#explanation").html(Mustache.render(MyWindow().explanation, 
+        questions : questions))
       setTimeout(->
         $('#share-modal').modal()
       , 2000)

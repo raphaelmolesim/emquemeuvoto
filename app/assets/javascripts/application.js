@@ -26,6 +26,7 @@
 //= require templates/show_question.js.coffee
 //= require templates/result.js.coffee
 //= require templates/priorize_questions.js.coffee
+//= require templates/explanation.js.coffee
 //= require ranking.js.coffee
 //= require home.js.coffee
 //= require fb.js

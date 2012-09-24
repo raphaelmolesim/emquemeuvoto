@@ -10,6 +10,8 @@ result_page = "
 
    {{&link}}
 
+   <div id='explanation'></div>
+
   </div>
 
   <h2>Ajude-nos a divulgar o nosso site!</h2>
