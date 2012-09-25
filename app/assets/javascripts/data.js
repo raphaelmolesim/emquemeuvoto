@@ -26,7 +26,7 @@ var questions = [
 		opponents: [ ]
 	},
 	{
-		title: 'Aproximar a Guada Civil Metropolitana da população',
+		title: 'Aproximar a Guarda Civil Metropolitana da população',
 		subtitle: 'Transparência na atuação da GCM',
 		description: 'Implementar as Inspetorias Distritais a fim de aproximar o comando da GCM da população local. Ou Aprimorar, fortalecer e ampliar o papel dos CONSEGs (Conselhos de Segurança), de modo a aumentar a efetividade e a transparência às reivindicações das comunidades locais.  ',
 		proposers: [ 'soninha', 'russomano' ],
