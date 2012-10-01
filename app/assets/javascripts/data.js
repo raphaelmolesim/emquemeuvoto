@@ -46,7 +46,7 @@ var questions = [
 	{
 		title: 'Tarifa do Ônibus Proporcional',
 		subtitle: 'O valor da passagem varia conforme a distância percorrida',
-		description: 'Instituir a tarifa proporcional, estabelecendo valor mínimo e máximo ao usuário do sistema de transporte de ônibus, onde será pago apenas o percurso utilizado.<br /><br /> Assim quem anda distâncias maiores paga mais e que anda distâncias menores paga menos.',
+		description: 'Instituir a tarifa proporcional, estabelecendo valor mínimo e máximo (R$ 3,00) ao usuário do sistema de transporte de ônibus, onde será pago apenas o percurso utilizado.<br /><br /> A pessoa entra no ônibus, põe a sua digital, passa seu cartão, depois na hora que for descer no ponto põe o dedo de novo e vai ser verificado o percurso que essa pessoa fez.  Se o percurso for menor do que a viagem inteira, ela paga menos do que a viagem inteira.',
 		proposers: [ 'russomano' ],
 		opponents: [ ],
 		references: [ 
